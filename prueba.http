@@ -1,0 +1,29 @@
+### 1. Registrar un nuevo tópico (CREATE)
+POST http://localhost:8080/topicos
+Content-Type: application/json
+
+{
+  "titulo": "Prueba número 2",
+  "mensaje": "Comprobando que lo hice bien",
+  "autor": "Adriana",
+  "curso": "Spring Boot 3"
+}
+
+### 2. Listar todos los tópicos (READ ALL)
+GET http://localhost:8080/topicos
+
+### 3. Detallar un tópico específico (READ ONE)
+GET http://localhost:8080/topicos/4
+
+### 4. Actualizar un tópico (UPDATE)
+PUT http://localhost:8080/topicos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "titulo": "Duda resuelta sobre DELETE",
+  "mensaje": "¡Ya logré hacer que funcione el borrado!"
+}
+
+### 5. Eliminar un tópico (DELETE)
+DELETE http://localhost:8080/topicos/1

@@ -46,4 +46,11 @@ Todo esto manejando la persistencia de datos en una base de datos relacional y v
     Ejecuta la clase principal `ForoHubApplication.java`.
 
 ---
+## 🚀 Novedades (Fase 1 completada)
+- Se implementó el CRUD completo para la entidad `Topico`.
+- Rutas configuradas (`GET`, `POST`, `PUT`, `DELETE`).
+- Conexión exitosa a PostgreSQL usando Spring Data JPA y Flyway.
+- Validaciones de reglas de negocio integradas (prevención de duplicados).
+
+- 
 Desarrollado con 💙 por Adriana Rodríguez
