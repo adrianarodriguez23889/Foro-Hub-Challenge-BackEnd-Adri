@@ -55,7 +55,6 @@ public class TopicoController {
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity eliminarTopico(@PathVariable Long id) {
-        // Usamos deleteById como pide Alura
         topicoRepository.deleteById(id);
         return ResponseEntity.noContent().build();
     }

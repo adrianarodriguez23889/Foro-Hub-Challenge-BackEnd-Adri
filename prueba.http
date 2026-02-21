@@ -1,5 +1,18 @@
+### Login de Usuario
+POST http://localhost:8080/login
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvIGh1YiIsInN1YiI6ImFkcmlhbmFAZW1haWwuY29tIiwiaWQiOjEsImV4cCI6MTc3MTcxODE0OH0.zX9pF0mSo6JcoozK7v9lwGRoYj1DTlXbFXWYq6VliWs
+
+Content-Type: application/json
+
+{
+  "login": "adriana@email.com",
+  "clave": "123456"
+}
+
 ### 1. Registrar un nuevo tópico (CREATE)
 POST http://localhost:8080/topicos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvIGh1YiIsInN1YiI6ImFkcmlhbmFAZW1haWwuY29tIiwiaWQiOjEsImV4cCI6MTc3MTcxODE0OH0.zX9pF0mSo6JcoozK7v9lwGRoYj1DTlXbFXWYq6VliWs
+
 Content-Type: application/json
 
 {
@@ -11,12 +24,17 @@ Content-Type: application/json
 
 ### 2. Listar todos los tópicos (READ ALL)
 GET http://localhost:8080/topicos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvIGh1YiIsInN1YiI6ImFkcmlhbmFAZW1haWwuY29tIiwiaWQiOjEsImV4cCI6MTc3MTcxODE0OH0.zX9pF0mSo6JcoozK7v9lwGRoYj1DTlXbFXWYq6VliWs
 
 ### 3. Detallar un tópico específico (READ ONE)
 GET http://localhost:8080/topicos/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvIGh1YiIsInN1YiI6ImFkcmlhbmFAZW1haWwuY29tIiwiaWQiOjEsImV4cCI6MTc3MTcxODE0OH0.zX9pF0mSo6JcoozK7v9lwGRoYj1DTlXbFXWYq6VliWs
+
 
 ### 4. Actualizar un tópico (UPDATE)
 PUT http://localhost:8080/topicos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvIGh1YiIsInN1YiI6ImFkcmlhbmFAZW1haWwuY29tIiwiaWQiOjEsImV4cCI6MTc3MTcxODE0OH0.zX9pF0mSo6JcoozK7v9lwGRoYj1DTlXbFXWYq6VliWs
+
 Content-Type: application/json
 
 {
@@ -27,3 +45,4 @@ Content-Type: application/json
 
 ### 5. Eliminar un tópico (DELETE)
 DELETE http://localhost:8080/topicos/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmb3JvIGh1YiIsInN1YiI6ImFkcmlhbmFAZW1haWwuY29tIiwiaWQiOjEsImV4cCI6MTc3MTcxODE0OH0.zX9pF0mSo6JcoozK7v9lwGRoYj1DTlXbFXWYq6VliWs
